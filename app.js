@@ -19,11 +19,45 @@ document.getElementById('greeting').appendChild(newImg);
 
 // Create and add a ul element to the end of the body with a class of "todo-items"
 
+var toDoItems = document.createElement('ul')
+toDoItems.className = "todo-items";
+toDoItems.style.color = "black";
+document.body.appendChild(toDoItems);
 
 
 // Go through the array ['make coffee','eat donut','change diapers','drive to work'] and create an li element for each item e.g. <li>make coffee</li>
-
 // Add each newly created li element to your ul of class "todo-items"
+var newLi = document.createElement('li')
+newLi.class = "todo-items"
+var li = document.createElement('li')
+var li1 = document.createElement('li')
+var li2 = document.createElement('li')
+var li3 = document.createElement('li')
+
+newLi.appendChild(li);
+
+
+
+var li = document.createElement('li')
+var newLiText = document.createTextNode('make coffee');
+li.appendChild(newLiText);
+document.body.appendChild(li);
+
+var li1 = document.createElement('li')
+var newLiText1 = document.createTextNode('eat donut');
+li1.appendChild(newLiText1);
+document.body.appendChild(li1);
+
+
+
+
+newLi.appendChild(li2);
+li2.appendChild(document.createTextNode('change diapers'));
+
+newLi.appendChild(li3);
+li3.appendChild(document.createTextNode('drive to work'));
+
+
 
 // Part Two:
 // Afterwards:
